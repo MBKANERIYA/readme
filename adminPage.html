@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="grade"></h1>
+    <h2 id="avg"></h2>
+
+
+    <script>
+        let maths = parseInt(prompt("enter maths mark ="))
+        let english = parseInt(prompt("enter english mark ="))
+        let science = parseInt(prompt("enter science mark ="))
+        let history = parseInt(prompt("enter history mark ="))
+        let polity = parseInt(prompt("enter geography mark ="))
+
+        
+        let avg = (maths + english + science + history + polity)/5;
+        console.log(avg);
+        if(avg >= 80){
+            document.getElementById("grade").innerHTML = "Grade-A" 
+            document.getElementById("avg").innerHTML = avg 
+        }
+        else if(avg<80 && avg>=60){
+            
+            document.getElementById("grade").innerHTML = "Grade-B" 
+            document.getElementById("avg").innerHTML = avg 
+        }
+        else{
+            
+            document.getElementById("grade").innerHTML = "fail" 
+        }
+        
+
+    </script>
+</body>
+
+</html>
